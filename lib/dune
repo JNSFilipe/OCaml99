@@ -1,2 +1,4 @@
 (library
- (name OCaml99))
+ (name OCaml99)
+ (public_name OCaml99)
+ (modules Problems))

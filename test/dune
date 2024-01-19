@@ -1,2 +1,4 @@
 (test
- (name OCaml99))
+ (name OCaml99)
+ (libraries OCaml99 ))
+ ;; (modules problems))
