@@ -27,4 +27,13 @@ let () =
                 (option (pair string string))
                 "last_two 2" None (last_two [ "a" ]));
         ] );
+      (* <++> Problem 3 *)
+      ( "Problem 3 - at",
+        [
+          test_case "Input [ a; b; c; d; e ] 3" `Quick (fun () ->
+              check (option string) "at 1" (Some "d")
+                (at [ "a"; "b"; "c"; "d"; "e" ] 3));
+          test_case "Input [a] 3" `Quick (fun () ->
+              check (option string) "at 2" None (at [ "a" ] 3));
+        ] );
     ]
