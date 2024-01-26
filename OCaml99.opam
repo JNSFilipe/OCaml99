@@ -13,6 +13,7 @@ bug-reports: "https://github.com/JNSFilipe/OCaml99/issues"
 depends: [
   "ocaml"
   "dune" {>= "3.11"}
+  "alcotest" {with-test}
   "odoc" {with-doc}
 ]
 build: [

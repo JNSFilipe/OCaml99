@@ -1,4 +1,3 @@
 (test
- (name OCaml99)
- (libraries OCaml99 ))
- ;; (modules problems))
+ (name unittests)
+ (libraries OCaml99 alcotest))

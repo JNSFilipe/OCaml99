@@ -19,7 +19,7 @@
  (name OCaml99)
  (synopsis "My solutions to the 99 problems in OCaml")
  (description "This repo contains my solutions to the 99 problems found [here](https://v2.ocaml.org/learn/tutorials/99problems.html), in an attempt to learn OCaml.")
- (depends ocaml dune)
+ (depends ocaml dune (alcotest :with-test))
  (tags
   ("OCaml" "learn" "99 problems")))
 
