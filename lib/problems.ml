@@ -13,3 +13,10 @@ let rec at l i =
   | 0, x :: _ -> Some x
   | _, _ :: t -> at t (i - 1)
   | _, [] -> None
+
+(* <++> Problem 4 *)
+let length l =
+  let rec aux list acc =
+    match list with [] -> acc | _ :: tail -> aux tail (acc + 1)
+  in
+  aux l 0
