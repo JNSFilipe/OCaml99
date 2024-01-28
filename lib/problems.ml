@@ -20,3 +20,10 @@ let length l =
     match list with [] -> acc | _ :: tail -> aux tail (acc + 1)
   in
   aux l 0
+
+(* <++> Problem 5 *)
+let rev l =
+  let rec aux in_list out_list =
+    match in_list with x :: tail -> aux tail (x :: out_list) | [] -> out_list
+  in
+  aux l []

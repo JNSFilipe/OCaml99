@@ -45,4 +45,11 @@ let () =
           test_case "Input []" `Quick (fun () ->
               check int "length 2" 0 (length []));
         ] );
+      (* <++> Problem 5 *)
+      ( "Problem 5 - rev",
+        [
+          test_case "Input [ a; b; c ]" `Quick (fun () ->
+              check (list string) "rev 1" [ "c"; "b"; "a" ]
+                (rev [ "a"; "b"; "c" ]));
+        ] );
     ]
