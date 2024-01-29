@@ -52,4 +52,13 @@ let () =
               check (list string) "rev 1" [ "c"; "b"; "a" ]
                 (rev [ "a"; "b"; "c" ]));
         ] );
+      (* <++> Problem 6 *)
+      ( "Problem 6 - is_palindrome",
+        [
+          test_case "Input [x; a; m; a; x]" `Quick (fun () ->
+              check bool "is_palindrome 1" true
+                (is_palindrome [ "x"; "a"; "m"; "a"; "x" ]));
+          test_case "Input [a; b]" `Quick (fun () ->
+              check bool "is_palindrome 2" false (is_palindrome [ "a"; "b" ]));
+        ] );
     ]

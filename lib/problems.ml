@@ -27,3 +27,6 @@ let rev l =
     match in_list with x :: tail -> aux tail (x :: out_list) | [] -> out_list
   in
   aux l []
+
+(* <++> Problem 6 *)
+let is_palindrome l = l = rev l
