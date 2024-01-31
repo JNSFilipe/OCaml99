@@ -30,3 +30,15 @@ let rev l =
 
 (* <++> Problem 6 *)
 let is_palindrome l = l = rev l
+
+(* <++> Problem 7 *)
+type 'a node = One of 'a | Many of 'a node list
+
+let flatten l =
+  let rec aux out_list in_list =
+    match in_list with
+    | [] -> out_list
+    | One x :: t -> aux (x :: out_list) t
+    | Many in_list :: t -> aux (aux out_list in_list) t
+  in
+  List.rev (aux [] l)
